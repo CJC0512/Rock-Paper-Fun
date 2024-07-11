@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: RPF-Backend
+  datasource:
+    url: jdbc:mariadb://localhost:3306/rpf
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: rpf
+    password: rpf
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    database: mysql
+    properties:
+      hibernate:
+        '[format_sql]': true
