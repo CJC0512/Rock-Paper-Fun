@@ -1,4 +1,5 @@
 package com.bcd.rockpaperfun.service;
+import com.bcd.rockpaperfun.entity.RPSVote;
 import com.bcd.rockpaperfun.entity.User;
 import com.bcd.rockpaperfun.repository.RPSVoteRepository;
 import com.bcd.rockpaperfun.repository.UserRepository;
@@ -14,7 +15,6 @@ import java.util.stream.Collectors;
 public class GameService {
     private final RPSVoteRepository rpsVoteRepository;
     private final UserRepository userRepository;
-    private Object RPSVote;
 
     public void calculateAndApplyResults() {
         // 각 진영의 투표 비율 계산
